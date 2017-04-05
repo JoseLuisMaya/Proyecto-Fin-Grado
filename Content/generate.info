@@ -1,0 +1,159 @@
+﻿<GenerateInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEditor.Exporter.Model">
+  <files xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+    <d2p1:KeyValueOfstringFileHashesH8kexHFU>
+      <d2p1:Key>C:/Users/a_57__000/Desktop/Estudios/Universidad/4º Ingenieria del Software/TFG/Proyecto/TFG/Content/Assets/Textures/pl2289146-families_baroque_hdf_waterproof_7mm_laminate_flooring_with_wooden_material.jpg#WaveEditor.Exporter.Exporters.TextureExporter</d2p1:Key>
+      <d2p1:Value>
+        <FileHash>7e5cd072e1d461c6439208520a16af0b</FileHash>
+        <WinfoHash>09d022fb02d98012422c0f2b286c0cc7</WinfoHash>
+      </d2p1:Value>
+    </d2p1:KeyValueOfstringFileHashesH8kexHFU>
+    <d2p1:KeyValueOfstringFileHashesH8kexHFU>
+      <d2p1:Key>C:/Users/a_57__000/Desktop/Estudios/Universidad/4º Ingenieria del Software/TFG/Proyecto/TFG/Content/Assets/Models/Worm.3ds#WaveEditor.Exporter.Exporters.StaticModelExporter</d2p1:Key>
+      <d2p1:Value>
+        <FileHash>bbf505083a859ecfe2cc2e53f78c7b1e</FileHash>
+        <WinfoHash>54d956c15495aebb2650fc746da53272</WinfoHash>
+      </d2p1:Value>
+    </d2p1:KeyValueOfstringFileHashesH8kexHFU>
+    <d2p1:KeyValueOfstringFileHashesH8kexHFU>
+      <d2p1:Key>C:/Users/a_57__000/Desktop/Estudios/Universidad/4º Ingenieria del Software/TFG/Proyecto/TFG/Content/Assets/Textures/Eyes.jpg#WaveEditor.Exporter.Exporters.TextureExporter</d2p1:Key>
+      <d2p1:Value>
+        <FileHash>7e69fa83fa3eac76d2e18ae88707dfce</FileHash>
+        <WinfoHash>c18598e202e92fdab9340f5206cbb4ad</WinfoHash>
+      </d2p1:Value>
+    </d2p1:KeyValueOfstringFileHashesH8kexHFU>
+    <d2p1:KeyValueOfstringFileHashesH8kexHFU>
+      <d2p1:Key>C:/Users/a_57__000/Desktop/Estudios/Universidad/4º Ingenieria del Software/TFG/Proyecto/TFG/Content/Assets/Textures/Teeth.jpg#WaveEditor.Exporter.Exporters.TextureExporter</d2p1:Key>
+      <d2p1:Value>
+        <FileHash>eb6b42c1a03fc58f5234d7ce38f1b617</FileHash>
+        <WinfoHash>c9e536a084e81f788b4dfa2c8e8622f5</WinfoHash>
+      </d2p1:Value>
+    </d2p1:KeyValueOfstringFileHashesH8kexHFU>
+    <d2p1:KeyValueOfstringFileHashesH8kexHFU>
+      <d2p1:Key>C:\Users\a_57__000\Desktop\Estudios\Universidad\4º Ingenieria del Software\TFG\Proyecto\TFG\Content\Assets\Models\Island\.DS_Store#WaveEditor.Exporter.Exporters.ByPassExporter</d2p1:Key>
+      <d2p1:Value>
+        <FileHash>4e02c69c7760025bc2a4fd21a83c2450</FileHash>
+        <WinfoHash>870c6e2c48f8dd63dff575bb1a74425d</WinfoHash>
+      </d2p1:Value>
+    </d2p1:KeyValueOfstringFileHashesH8kexHFU>
+    <d2p1:KeyValueOfstringFileHashesH8kexHFU>
+      <d2p1:Key>C:\Users\a_57__000\Desktop\Estudios\Universidad\4º Ingenieria del Software\TFG\Proyecto\TFG\Content\Assets\Models\Island\Island.c4d#WaveEditor.Exporter.Exporters.ByPassExporter</d2p1:Key>
+      <d2p1:Value>
+        <FileHash>2dc3eb0cd2253a2d38ff89273898f119</FileHash>
+        <WinfoHash>5a436174205bd1cbe4a57a8d6387fff1</WinfoHash>
+      </d2p1:Value>
+    </d2p1:KeyValueOfstringFileHashesH8kexHFU>
+    <d2p1:KeyValueOfstringFileHashesH8kexHFU>
+      <d2p1:Key>C:/Users/a_57__000/Desktop/Estudios/Universidad/4º Ingenieria del Software/TFG/Proyecto/TFG/Content/Assets/Models/Island/Renders/Screen Shot 2016-07-12 at 9.39.14 PM.png#WaveEditor.Exporter.Exporters.TextureExporter</d2p1:Key>
+      <d2p1:Value>
+        <FileHash>2715cd0d4ebd01e29fd0034a320e8e55</FileHash>
+        <WinfoHash>d5200b851d6f98acc13fda0c0d382f29</WinfoHash>
+      </d2p1:Value>
+    </d2p1:KeyValueOfstringFileHashesH8kexHFU>
+    <d2p1:KeyValueOfstringFileHashesH8kexHFU>
+      <d2p1:Key>C:/Users/a_57__000/Desktop/Estudios/Universidad/4º Ingenieria del Software/TFG/Proyecto/TFG/Content/Assets/Models/Island/Renders/Screen Shot 2016-07-12 at 9.39.26 PM.png#WaveEditor.Exporter.Exporters.TextureExporter</d2p1:Key>
+      <d2p1:Value>
+        <FileHash>a0f70b4dc52100abcc2186672efcede6</FileHash>
+        <WinfoHash>499d6b9383085775a728b5c9d62d3ea2</WinfoHash>
+      </d2p1:Value>
+    </d2p1:KeyValueOfstringFileHashesH8kexHFU>
+    <d2p1:KeyValueOfstringFileHashesH8kexHFU>
+      <d2p1:Key>C:/Users/a_57__000/Desktop/Estudios/Universidad/4º Ingenieria del Software/TFG/Proyecto/TFG/Content/Assets/Models/Island/Renders/Screen Shot 2016-07-12 at 9.41.07 PM.png#WaveEditor.Exporter.Exporters.TextureExporter</d2p1:Key>
+      <d2p1:Value>
+        <FileHash>500b084c7ff9eb3c010d9e342186f40d</FileHash>
+        <WinfoHash>a54a41e581344cfa248a7ebc2d415db3</WinfoHash>
+      </d2p1:Value>
+    </d2p1:KeyValueOfstringFileHashesH8kexHFU>
+    <d2p1:KeyValueOfstringFileHashesH8kexHFU>
+      <d2p1:Key>C:/Users/a_57__000/Desktop/Estudios/Universidad/4º Ingenieria del Software/TFG/Proyecto/TFG/Content/Assets/Models/Island/Textures/1-fine-sand-seamless-texture.jpg#WaveEditor.Exporter.Exporters.TextureExporter</d2p1:Key>
+      <d2p1:Value>
+        <FileHash>35dc4c158a7fb4a910a749b5daca497e</FileHash>
+        <WinfoHash>209c60b725af5e4e565a702ee2b31179</WinfoHash>
+      </d2p1:Value>
+    </d2p1:KeyValueOfstringFileHashesH8kexHFU>
+    <d2p1:KeyValueOfstringFileHashesH8kexHFU>
+      <d2p1:Key>C:/Users/a_57__000/Desktop/Estudios/Universidad/4º Ingenieria del Software/TFG/Proyecto/TFG/Content/Assets/Models/Island/Textures/Bump.png#WaveEditor.Exporter.Exporters.TextureExporter</d2p1:Key>
+      <d2p1:Value>
+        <FileHash>b1913ec18fc11257e5d281ba52f62ca7</FileHash>
+        <WinfoHash>ad0c7ff296d2c75cd0ce6ae3f3afd0af</WinfoHash>
+      </d2p1:Value>
+    </d2p1:KeyValueOfstringFileHashesH8kexHFU>
+    <d2p1:KeyValueOfstringFileHashesH8kexHFU>
+      <d2p1:Key>C:/Users/a_57__000/Desktop/Estudios/Universidad/4º Ingenieria del Software/TFG/Proyecto/TFG/Content/Assets/Models/Island/Textures/Diffuse.png#WaveEditor.Exporter.Exporters.TextureExporter</d2p1:Key>
+      <d2p1:Value>
+        <FileHash>76a14b36b0cde1f091b64fa4b6967a4b</FileHash>
+        <WinfoHash>09b5505da534b1632bb846cd8ce45903</WinfoHash>
+      </d2p1:Value>
+    </d2p1:KeyValueOfstringFileHashesH8kexHFU>
+    <d2p1:KeyValueOfstringFileHashesH8kexHFU>
+      <d2p1:Key>C:/Users/a_57__000/Desktop/Estudios/Universidad/4º Ingenieria del Software/TFG/Proyecto/TFG/Content/Assets/Models/Island/Textures/Specular.png#WaveEditor.Exporter.Exporters.TextureExporter</d2p1:Key>
+      <d2p1:Value>
+        <FileHash>ea608c1525c65df471599f3aed0c7b2b</FileHash>
+        <WinfoHash>f713fea15ab6eb2982f4c454667113ab</WinfoHash>
+      </d2p1:Value>
+    </d2p1:KeyValueOfstringFileHashesH8kexHFU>
+    <d2p1:KeyValueOfstringFileHashesH8kexHFU>
+      <d2p1:Key>C:\Users\a_57__000\Desktop\Estudios\Universidad\4º Ingenieria del Software\TFG\Proyecto\TFG\Content\Assets\Models\19\Pingwin5wyjsciowy.max#WaveEditor.Exporter.Exporters.ByPassExporter</d2p1:Key>
+      <d2p1:Value>
+        <FileHash>f5ddc0447fbabf2227be9fa1eec2b39a</FileHash>
+        <WinfoHash>f0ceb72a2f22ee2b064cfc5c7f73b0aa</WinfoHash>
+      </d2p1:Value>
+    </d2p1:KeyValueOfstringFileHashesH8kexHFU>
+    <d2p1:KeyValueOfstringFileHashesH8kexHFU>
+      <d2p1:Key>C:/Users/jlmaya/Desktop/probar/TFG/Content/Assets/Models/Worm.3ds#WaveEditor.Exporter.Exporters.StaticModelExporter</d2p1:Key>
+      <d2p1:Value>
+        <FileHash>bbf505083a859ecfe2cc2e53f78c7b1e</FileHash>
+        <WinfoHash>54d956c15495aebb2650fc746da53272</WinfoHash>
+      </d2p1:Value>
+    </d2p1:KeyValueOfstringFileHashesH8kexHFU>
+    <d2p1:KeyValueOfstringFileHashesH8kexHFU>
+      <d2p1:Key>C:/Users/jlmaya/Desktop/probar/TFG/Content/Assets/Textures/Eyes.jpg#WaveEditor.Exporter.Exporters.TextureExporter</d2p1:Key>
+      <d2p1:Value>
+        <FileHash>7e69fa83fa3eac76d2e18ae88707dfce</FileHash>
+        <WinfoHash>c18598e202e92fdab9340f5206cbb4ad</WinfoHash>
+      </d2p1:Value>
+    </d2p1:KeyValueOfstringFileHashesH8kexHFU>
+    <d2p1:KeyValueOfstringFileHashesH8kexHFU>
+      <d2p1:Key>C:/Users/jlmaya/Desktop/probar/TFG/Content/Assets/Textures/pl2289146-families_baroque_hdf_waterproof_7mm_laminate_flooring_with_wooden_material.jpg#WaveEditor.Exporter.Exporters.TextureExporter</d2p1:Key>
+      <d2p1:Value>
+        <FileHash>7e5cd072e1d461c6439208520a16af0b</FileHash>
+        <WinfoHash>09d022fb02d98012422c0f2b286c0cc7</WinfoHash>
+      </d2p1:Value>
+    </d2p1:KeyValueOfstringFileHashesH8kexHFU>
+    <d2p1:KeyValueOfstringFileHashesH8kexHFU>
+      <d2p1:Key>C:/Users/jlmaya/Desktop/probar/TFG/Content/Assets/Textures/Teeth.jpg#WaveEditor.Exporter.Exporters.TextureExporter</d2p1:Key>
+      <d2p1:Value>
+        <FileHash>eb6b42c1a03fc58f5234d7ce38f1b617</FileHash>
+        <WinfoHash>c9e536a084e81f788b4dfa2c8e8622f5</WinfoHash>
+      </d2p1:Value>
+    </d2p1:KeyValueOfstringFileHashesH8kexHFU>
+    <d2p1:KeyValueOfstringFileHashesH8kexHFU>
+      <d2p1:Key>C:/Users/jlmaya/Desktop/Probar/TFG/Content/Assets/Models/Worm.3ds#WaveEditor.Exporter.Exporters.StaticModelExporter</d2p1:Key>
+      <d2p1:Value>
+        <FileHash>bbf505083a859ecfe2cc2e53f78c7b1e</FileHash>
+        <WinfoHash>54d956c15495aebb2650fc746da53272</WinfoHash>
+      </d2p1:Value>
+    </d2p1:KeyValueOfstringFileHashesH8kexHFU>
+    <d2p1:KeyValueOfstringFileHashesH8kexHFU>
+      <d2p1:Key>C:/Users/jlmaya/Desktop/Probar/TFG/Content/Assets/Textures/Eyes.jpg#WaveEditor.Exporter.Exporters.TextureExporter</d2p1:Key>
+      <d2p1:Value>
+        <FileHash>7e69fa83fa3eac76d2e18ae88707dfce</FileHash>
+        <WinfoHash>c18598e202e92fdab9340f5206cbb4ad</WinfoHash>
+      </d2p1:Value>
+    </d2p1:KeyValueOfstringFileHashesH8kexHFU>
+    <d2p1:KeyValueOfstringFileHashesH8kexHFU>
+      <d2p1:Key>C:/Users/jlmaya/Desktop/Probar/TFG/Content/Assets/Textures/pl2289146-families_baroque_hdf_waterproof_7mm_laminate_flooring_with_wooden_material.jpg#WaveEditor.Exporter.Exporters.TextureExporter</d2p1:Key>
+      <d2p1:Value>
+        <FileHash>7e5cd072e1d461c6439208520a16af0b</FileHash>
+        <WinfoHash>09d022fb02d98012422c0f2b286c0cc7</WinfoHash>
+      </d2p1:Value>
+    </d2p1:KeyValueOfstringFileHashesH8kexHFU>
+    <d2p1:KeyValueOfstringFileHashesH8kexHFU>
+      <d2p1:Key>C:/Users/jlmaya/Desktop/Probar/TFG/Content/Assets/Textures/Teeth.jpg#WaveEditor.Exporter.Exporters.TextureExporter</d2p1:Key>
+      <d2p1:Value>
+        <FileHash>eb6b42c1a03fc58f5234d7ce38f1b617</FileHash>
+        <WinfoHash>c9e536a084e81f788b4dfa2c8e8622f5</WinfoHash>
+      </d2p1:Value>
+    </d2p1:KeyValueOfstringFileHashesH8kexHFU>
+  </files>
+  <id>BFEBFBFF000206A7</id>
+</GenerateInfo>
