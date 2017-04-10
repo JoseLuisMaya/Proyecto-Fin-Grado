@@ -101,8 +101,13 @@ namespace TFG
 
 
             }
+            sphere = EntityManager.Find("ball1");
+            if (sphere == null)
+            {
+                sphere = EntityManager.Find("ballFrag1");
+            }
 
-            if ((WaveServices.Input.KeyboardState.Q == WaveEngine.Common.Input.ButtonState.Release) && pressed == true)
+            if ((WaveServices.Input.KeyboardState.Q == WaveEngine.Common.Input.ButtonState.Release) && pressed == true && sphere == null)
             {
                 Shoot();
             }
@@ -133,7 +138,7 @@ namespace TFG
             rigidBody.ResetPosition(this.targetTransform.Position + Vector3.Up);
 
             // Vector3 direction = Camera.Transform.WorldTransform.Forward;
-            Vector3 direction = Vector3.Up;
+            Vector3 direction = Vector3.Up*5;
             //direction.Normalize();
 
             rigidBody.ApplyLinearImpulse(force * direction);

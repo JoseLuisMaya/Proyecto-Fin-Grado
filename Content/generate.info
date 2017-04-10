@@ -154,6 +154,34 @@
         <WinfoHash>c9e536a084e81f788b4dfa2c8e8622f5</WinfoHash>
       </d2p1:Value>
     </d2p1:KeyValueOfstringFileHashesH8kexHFU>
+    <d2p1:KeyValueOfstringFileHashesH8kexHFU>
+      <d2p1:Key>C:/Users/jlmaya/Desktop/TFG/TFG/Content/Assets/Models/Worm.3ds#WaveEditor.Exporter.Exporters.StaticModelExporter</d2p1:Key>
+      <d2p1:Value>
+        <FileHash>bbf505083a859ecfe2cc2e53f78c7b1e</FileHash>
+        <WinfoHash>54d956c15495aebb2650fc746da53272</WinfoHash>
+      </d2p1:Value>
+    </d2p1:KeyValueOfstringFileHashesH8kexHFU>
+    <d2p1:KeyValueOfstringFileHashesH8kexHFU>
+      <d2p1:Key>C:/Users/jlmaya/Desktop/TFG/TFG/Content/Assets/Textures/Eyes.jpg#WaveEditor.Exporter.Exporters.TextureExporter</d2p1:Key>
+      <d2p1:Value>
+        <FileHash>7e69fa83fa3eac76d2e18ae88707dfce</FileHash>
+        <WinfoHash>c18598e202e92fdab9340f5206cbb4ad</WinfoHash>
+      </d2p1:Value>
+    </d2p1:KeyValueOfstringFileHashesH8kexHFU>
+    <d2p1:KeyValueOfstringFileHashesH8kexHFU>
+      <d2p1:Key>C:/Users/jlmaya/Desktop/TFG/TFG/Content/Assets/Textures/pl2289146-families_baroque_hdf_waterproof_7mm_laminate_flooring_with_wooden_material.jpg#WaveEditor.Exporter.Exporters.TextureExporter</d2p1:Key>
+      <d2p1:Value>
+        <FileHash>7e5cd072e1d461c6439208520a16af0b</FileHash>
+        <WinfoHash>09d022fb02d98012422c0f2b286c0cc7</WinfoHash>
+      </d2p1:Value>
+    </d2p1:KeyValueOfstringFileHashesH8kexHFU>
+    <d2p1:KeyValueOfstringFileHashesH8kexHFU>
+      <d2p1:Key>C:/Users/jlmaya/Desktop/TFG/TFG/Content/Assets/Textures/Teeth.jpg#WaveEditor.Exporter.Exporters.TextureExporter</d2p1:Key>
+      <d2p1:Value>
+        <FileHash>eb6b42c1a03fc58f5234d7ce38f1b617</FileHash>
+        <WinfoHash>c9e536a084e81f788b4dfa2c8e8622f5</WinfoHash>
+      </d2p1:Value>
+    </d2p1:KeyValueOfstringFileHashesH8kexHFU>
   </files>
   <id>BFEBFBFF000206A7</id>
 </GenerateInfo>
