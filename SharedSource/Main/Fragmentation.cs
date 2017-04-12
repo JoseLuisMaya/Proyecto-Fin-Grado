@@ -57,12 +57,14 @@ namespace TFG
 
         protected override void Update(TimeSpan gameTime)
         {
-
+            //Cargar el proyectil en ballEntity
             this.ballEntity = this.EntityManager.Find("ball1");
+
             if (this.planeEntity == null)
             {
                 return;
             }
+            //En caso de que ball1 no exista comprobar si existe ballFrag1 (Proyectil fragmentado)
             if (this.ballEntity == null)
             {
                 this.ballEntity = EntityManager.Find("ballFrag1");
@@ -76,10 +78,13 @@ namespace TFG
                 }
             }
 
+            //Guardar el delineado del colider del plano
             var planeBounding = planeEntity.FindComponent<BoxCollider3D>().BoundingBox;
 
+            //Guardar el delineado del colider de el proyectil
             var collider = this.ballEntity.FindComponent<SphereCollider3D>().BoundingSphere;
 
+            //Comprobar si el proyectil ha colisionado con el plano
             if (planeBounding.Intersects(ref collider))
             {
                 positionCol = ballEntity.FindComponent<Transform3D>().Position;
@@ -92,8 +97,10 @@ namespace TFG
                     collisionedFrag = true;
                 }
             }
+            //Obtener todos los objetos con un tag definido
             var tags = EntityManager.FindAllByTag("muro");
 
+            //Para cada objeto con dicho tag, comprobar si ha colisionado el proyectil con dicho objeto
             foreach (Entity tagi in tags)
             {
                 planeBounding = tagi.FindComponent<BoxCollider3D>().BoundingBox;
@@ -112,6 +119,7 @@ namespace TFG
                 }
             }
 
+            /*Si la colisión la hace los proyectiles fragmentados recuperamos cada fragmento y lo eliminamos*/
             if (collisionedFrag == true)
             {
 
@@ -124,6 +132,9 @@ namespace TFG
                 }
 
             }
+
+            /*Si ha colisionado el proyectil principal creamos 4 proyectiles para simular la fragmentación,
+             eliminamos el proyectil principal y lanzamos cada fragmento en una dirección*/
             if (collisioned == true)
             {
                 for (int i = 1; i < 5; i++)

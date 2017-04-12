@@ -37,7 +37,10 @@ namespace TFG
 
             this.CurrentSpeed = this.Speed;
 
+            //Cargamos la entidad que se movera
             var entity = this.EntityManager.Find(this.EntityPath);
+
+            //Cargamos su componente rigidbody
             this.rigidBodyTransform = entity.FindComponent<RigidBody3D>();
             rotation = Vector3.Zero;
             
@@ -47,15 +50,18 @@ namespace TFG
         {
            
             var input = WaveServices.Input.KeyboardState;
-            //  var localPosition = this.Transform.LocalPosition;
+            
 
-
+            /*Controlamos que mientras pulsemos el botón de salto y la posición sea menor que 1 el personaje
+            saltara. Le ponemos un máximo para que no siga subiendo hasta el infinito*/
             if (input.Space == WaveEngine.Common.Input.ButtonState.Pressed && this.Transform.Position.Y<=1)
             {
                 rigidBodyTransform.ApplyLinearImpulse(this.Transform.WorldTransform.Up *1.0f);
                 
 
             }
+
+            //Controlamos la dirección del desplazamiento dependiendo de la tecla pulsada
             if (input.S == WaveEngine.Common.Input.ButtonState.Pressed)
             {
                 rigidBodyTransform.ApplyLinearImpulse(this.Transform.WorldTransform.Forward *( this.CurrentSpeed * (float)gameTime.TotalSeconds));
@@ -69,7 +75,6 @@ namespace TFG
             if (input.D == WaveEngine.Common.Input.ButtonState.Pressed)
             {
 
-                // rotation.X -= (float)gameTime.TotalSeconds;
                 rotation.Y -= (float)gameTime.TotalSeconds;
                 
             }
@@ -81,9 +86,9 @@ namespace TFG
             }
             rigidBodyTransform.Rotation = rotation;
            
+            //Actualizamos la rotación del personaje
             this.Transform.LocalOrientation *= Quaternion.CreateFromYawPitchRoll(rigidBodyTransform.Rotation.X, rigidBodyTransform.Rotation.Y, rigidBodyTransform.Rotation.Z);
             this.Transform.Rotation = rigidBodyTransform.Rotation;
-            //this.Transform.LocalPosition = localPosition;
             
 
 

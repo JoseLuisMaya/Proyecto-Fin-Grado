@@ -333,10 +333,10 @@
       <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform3D">
           <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:W>0.0552063249</d6p1:W>
-            <d6p1:X>-9.91348352E-05</d6p1:X>
-            <d6p1:Y>-0.9984367</d6p1:Y>
-            <d6p1:Z>-0.008742694</d6p1:Z>
+            <d6p1:W>0.9972988</d6p1:W>
+            <d6p1:X>-0.008739606</d6p1:X>
+            <d6p1:Y>0.07290909</d6p1:Y>
+            <d6p1:Z>0.000254203042</d6p1:Z>
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:X>0</d6p1:X>

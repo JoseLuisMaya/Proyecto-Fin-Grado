@@ -41,7 +41,7 @@ namespace TFG
 
         private Ray ray;
 
-        private Line line;
+        
 
         protected override void Initialize()
         {
@@ -80,25 +80,31 @@ namespace TFG
             }
 
             this.physicsManager = this.Owner.Scene.PhysicsManager;
+            
+            //La posición del rayo es la posición de la cámara
             this.ray.Position = this.Transform.Position;
+            
+            //La dirección del rayo la calculamos restando la posición del personaje y la posición de la cámara
             this.ray.Direction = this.targetTransform.Position - this.Transform.Position;
+
+            //Creación del rayo resultado
             RayCastResult3D result;
             this.physicsManager.RayCast3D(this.ray, out result);
 
+            //Comprobamos si el rayo ha colisionado con algún objeto
             if (result.HitBody != null)
             {
+                /*Si el objeto ha colisionado con el personaje la posición de la cámara sera pointCamera
+                que es donde estará la cámara mientras no colisione con otro objeto que no sea el player */
                 if (result.HitBody.Owner.Name.Equals("Worm"))
                 {
 
-                  //Vector3 hitPosition = result.HitData.Location + (Vector3.Up * 0.1f);
-                  //Vector3 target = result.HitData.Location + result.HitData.Normal;
-                  //Vector3 target = result.HitData.Location + this.targetTransform.Position;
-                    this.camera.Position = this.pointCamera.Position;
-                  //this.line.StartPoint = hitPosition;
-                  //this.line.Color = Color.Red;
-                  //this.RenderManager.LineBatch3D.DrawLine(ref line);
-
+                  this.camera.Position = this.pointCamera.Position;
+                  
                 }
+
+                /*En caso de no colisionar con el personaje la cámara se coloca delante de el punto de 
+                colisión para que el personaje nunca quede oculto*/
                 else
                 {
                     Vector3 hitPosition = result.HitData.Location;
