@@ -13,6 +13,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)FollowBehavior.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Fragmentation.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Game.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Life.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)MyScene.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ShootingBehavior.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)WaveContent.cs" />

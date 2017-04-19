@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TFG_3</name>
+    </assembly>
+    <members>
+        <member name="M:TFG.App.OnActivated">
+            <summary>
+            Called when [activated].
+            </summary>
+        </member>
+        <member name="M:TFG.App.OnDeactivate">
+            <summary>
+            Called when [deactivate].
+            </summary>
+        </member>
+        <member name="F:TFG.WaveContent.Assets.Models.Worm_3ds">
+            <summary> Path to Content/Assets/Models/Worm.3ds </summary>
+        </member>
+        <member name="F:TFG.WaveContent.Assets.Textures.Eyes_jpg">
+            <summary> Path to Content/Assets/Textures/Eyes.jpg </summary>
+        </member>
+        <member name="F:TFG.WaveContent.Assets.Textures.pl2289146_families_baroque_hdf_waterproof_7mm_laminate_flooring_with_wooden_material_jpg">
+            <summary> Path to Content/Assets/Textures/pl2289146-families_baroque_hdf_waterproof_7mm_laminate_flooring_with_wooden_material.jpg </summary>
+        </member>
+        <member name="F:TFG.WaveContent.Assets.Textures.Teeth_jpg">
+            <summary> Path to Content/Assets/Textures/Teeth.jpg </summary>
+        </member>
+        <member name="F:TFG.WaveContent.Assets.Materials.Body">
+            <summary> Path to Content/Assets/Materials/Body.wmat </summary>
+        </member>
+        <member name="F:TFG.WaveContent.Assets.Materials.EYE">
+            <summary> Path to Content/Assets/Materials/EYE.wmat </summary>
+        </member>
+        <member name="F:TFG.WaveContent.Assets.Materials.MyMaterial">
+            <summary> Path to Content/Assets/Materials/MyMaterial.wmat </summary>
+        </member>
+        <member name="F:TFG.WaveContent.Scenes.MyScene">
+            <summary> Path to Content/Scenes/MyScene.wscene </summary>
+        </member>
+    </members>
+</doc>

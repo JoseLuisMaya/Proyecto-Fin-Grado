@@ -11,14 +11,14 @@
   <Camera3dFarPlane>12000</Camera3dFarPlane>
   <Camera3dNearPlane>0.1</Camera3dNearPlane>
   <Camera3dPosition xmlns:d2p1="WaveEngine.Common.Math">
-    <d2p1:X>4.42196751</d2p1:X>
-    <d2p1:Y>2.68990374</d2p1:Y>
-    <d2p1:Z>-1.8060348</d2p1:Z>
+    <d2p1:X>3.470178</d2p1:X>
+    <d2p1:Y>0.8000707</d2p1:Y>
+    <d2p1:Z>-3.76879168</d2p1:Z>
   </Camera3dPosition>
   <Camera3dRotation xmlns:d2p1="WaveEngine.Common.Math">
-    <d2p1:X>-0.3405237</d2p1:X>
-    <d2p1:Y>1.924009</d2p1:Y>
-    <d2p1:Z>-2.61607534E-06</d2p1:Z>
+    <d2p1:X>0.0440000519</d2p1:X>
+    <d2p1:Y>2.3735795</d2p1:Y>
+    <d2p1:Z>2.51348968E-08</d2p1:Z>
   </Camera3dRotation>
   <Camera3dSpeed>10</Camera3dSpeed>
   <ErrorPauseEnabled>true</ErrorPauseEnabled>
