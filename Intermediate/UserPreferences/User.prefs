@@ -16,9 +16,9 @@
     <d2p1:Z>-3.76879168</d2p1:Z>
   </Camera3dPosition>
   <Camera3dRotation xmlns:d2p1="WaveEngine.Common.Math">
-    <d2p1:X>0.0440000519</d2p1:X>
-    <d2p1:Y>2.3735795</d2p1:Y>
-    <d2p1:Z>2.51348968E-08</d2p1:Z>
+    <d2p1:X>0.04400005</d2p1:X>
+    <d2p1:Y>2.37358069</d2p1:Y>
+    <d2p1:Z>7.614993E-08</d2p1:Z>
   </Camera3dRotation>
   <Camera3dSpeed>10</Camera3dSpeed>
   <ErrorPauseEnabled>true</ErrorPauseEnabled>

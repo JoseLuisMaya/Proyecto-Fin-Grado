@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 18/04/2017 21:16:59
+// File generated on 19/04/2017 18:53:53
 namespace TFG
 {
     using System;
@@ -39,6 +39,9 @@ namespace TFG
                 
                 /// <summary> Path to Content/Assets/Textures/Teeth.jpg </summary>
                 public const string Teeth_jpg = "Content/Assets/Textures/Teeth.jpg";
+                
+                /// <summary> Path to Content/Assets/Textures/Thumbs.db </summary>
+                public const string Thumbs_db = "Content/Assets/Textures/Thumbs.db";
             }
             
             public sealed class Materials

@@ -172,6 +172,7 @@ namespace TFG
                 .AddComponent(Model.CreateSphere())
                 .AddComponent(new SphereCollider3D())
                 .AddComponent(new RigidBody3D() { Mass = 2, EnableContinuousContact = true })
+                .AddComponent(new Damage())
                 .AddComponent(new ModelRenderer());
                 EntityManager.Add(sphere);
 

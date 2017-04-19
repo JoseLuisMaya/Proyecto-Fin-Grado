@@ -10,6 +10,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)CameraCollision.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Damage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)FollowBehavior.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Fragmentation.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Game.cs" />

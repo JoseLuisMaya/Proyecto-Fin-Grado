@@ -26,6 +26,9 @@
         <member name="F:TFG.WaveContent.Assets.Textures.Teeth_jpg">
             <summary> Path to Content/Assets/Textures/Teeth.jpg </summary>
         </member>
+        <member name="F:TFG.WaveContent.Assets.Textures.Thumbs_db">
+            <summary> Path to Content/Assets/Textures/Thumbs.db </summary>
+        </member>
         <member name="F:TFG.WaveContent.Assets.Materials.Body">
             <summary> Path to Content/Assets/Materials/Body.wmat </summary>
         </member>

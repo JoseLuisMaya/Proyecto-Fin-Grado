@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Runtime.Serialization;
-using System.Text;
 using WaveEngine.Common.Attributes;
 using WaveEngine.Common.Graphics;
 using WaveEngine.Common.Math;
@@ -98,7 +96,7 @@ namespace TFG
                 }
             }
             //Obtener todos los objetos con un tag definido
-            var tags = EntityManager.FindAllByTag("muro");
+            var tags = EntityManager.FindAllByTag("worm");
 
             //Para cada objeto con dicho tag, comprobar si ha colisionado el proyectil con dicho objeto
             foreach (Entity tagi in tags)
@@ -145,6 +143,7 @@ namespace TFG
                             .AddComponent(Model.CreateSphere())
                             .AddComponent(new SphereCollider3D())
                             .AddComponent(new RigidBody3D() { Mass = 1, EnableContinuousContact = true })
+                            .AddComponent(new Damage())
                             .AddComponent(new ModelRenderer());
                     EntityManager.Add(sphere);
 
