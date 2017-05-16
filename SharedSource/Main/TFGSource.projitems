@@ -11,12 +11,17 @@
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)CameraCollision.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Damage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)EnemyIABehavior.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)FollowBehavior.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Fragmentation.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Game.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)GameOverMenu.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Life.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MenuScene.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)MyScene.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MySceneBehavior.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ShootingBehavior.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Treat.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)WaveContent.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)WormBehavior.cs" />
   </ItemGroup>

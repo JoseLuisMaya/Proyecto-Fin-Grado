@@ -22,7 +22,8 @@ namespace TFG
         public string EntityPath { get; set; }
 
         private Transform3D targetTransform;
-
+        private String name;
+        private String nameEnemy;
         [DataMember]
         [RenderPropertyAsEntity(new string[] { "WaveEngine.Framework.Graphics.Transform3D" })]
 
@@ -64,11 +65,17 @@ namespace TFG
             this.camera = entity.FindComponent<Transform3D>();
             entity = this.EntityManager.Find(this.EntityPathPointCamera);
             this.pointCamera = entity.FindComponent<Transform3D>();
+            name = null;
         }
 
         protected override void Update(TimeSpan gameTime)
         {
-
+            var entity = this.EntityManager.Find(this.EntityPath);
+            if (entity == null)
+            {
+                return;
+            }
+            this.targetTransform = entity.FindComponent<Transform3D>();
             if (targetTransform == null)
             {
                 return;
@@ -90,18 +97,37 @@ namespace TFG
             //Creación del rayo resultado
             RayCastResult3D result;
             this.physicsManager.RayCast3D(this.ray, out result);
+            var worms = this.EntityManager.FindAllByTag("worm");
+            var enemies = this.EntityManager.FindAllByTag("Enemy");
+            
+            foreach (Entity p in worms)
+            {
 
+                if (p.IsActive == true)
+                {
+                    name = p.Name;
+
+                }
+            }
+            foreach (Entity e in enemies)
+            {
+                if(e.IsActive == true)
+                {
+                    nameEnemy = e.Name;
+                }
+            }
             //Comprobamos si el rayo ha colisionado con algún objeto
             if (result.HitBody != null)
             {
                 /*Si el objeto ha colisionado con el personaje la posición de la cámara sera pointCamera
                 que es donde estará la cámara mientras no colisione con otro objeto que no sea el player */
-                if (result.HitBody.Owner.Name.Equals("Worm"))
+                if (result.HitBody.Owner.Name.Equals(name) || result.HitBody.Owner.Name.Equals(nameEnemy))
                 {
 
                   this.camera.Position = this.pointCamera.Position;
                   
                 }
+                
 
                 /*En caso de no colisionar con el personaje la cámara se coloca delante de el punto de 
                 colisión para que el personaje nunca quede oculto*/

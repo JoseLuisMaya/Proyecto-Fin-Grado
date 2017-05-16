@@ -1,6 +1,6 @@
 ﻿<ProjectUserPreferences xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/WaveEditor.Core.Shared.Model">
   <Camera2dPosition xmlns:d2p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
-    <d2p1:X>-19</d2p1:X>
+    <d2p1:X>-125.5</d2p1:X>
     <d2p1:Y>8</d2p1:Y>
   </Camera2dPosition>
   <Camera2dZoom xmlns:d2p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
@@ -11,14 +11,14 @@
   <Camera3dFarPlane>12000</Camera3dFarPlane>
   <Camera3dNearPlane>0.1</Camera3dNearPlane>
   <Camera3dPosition xmlns:d2p1="WaveEngine.Common.Math">
-    <d2p1:X>3.470178</d2p1:X>
-    <d2p1:Y>0.8000707</d2p1:Y>
-    <d2p1:Z>-3.76879168</d2p1:Z>
+    <d2p1:X>4.23189163</d2p1:X>
+    <d2p1:Y>1.56929612</d2p1:Y>
+    <d2p1:Z>0.179267138</d2p1:Z>
   </Camera3dPosition>
   <Camera3dRotation xmlns:d2p1="WaveEngine.Common.Math">
-    <d2p1:X>0.04400005</d2p1:X>
-    <d2p1:Y>2.37358069</d2p1:Y>
-    <d2p1:Z>7.614993E-08</d2p1:Z>
+    <d2p1:X>-0.259999931</d2p1:X>
+    <d2p1:Y>1.40968966</d2p1:Y>
+    <d2p1:Z>2.312275E-07</d2p1:Z>
   </Camera3dRotation>
   <Camera3dSpeed>10</Camera3dSpeed>
   <ErrorPauseEnabled>true</ErrorPauseEnabled>

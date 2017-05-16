@@ -11,7 +11,7 @@ using WaveEngine.Framework.Physics3D;
 namespace TFG
 {
     [DataContract]
-    class FollowBehavior : Behavior
+   public class FollowBehavior : Behavior
     {
         [RequiredComponent]
         public Transform3D Transform;
@@ -39,11 +39,17 @@ namespace TFG
         }
         protected override void Update(TimeSpan gameTime)
         {
-   
+
+            var entity = this.EntityManager.Find(this.EntityPath);
+            if(entity == null)
+            {
+                return;
+            }
+            this.targetTransform = entity.FindComponent<Transform3D>();
             /*Mientras que tengamos un objetivo que seguir la posición de la cámara seguirá la posición y 
             rotación de el objetivo*/
 
-                if (this.targetTransform == null)
+            if (this.targetTransform == null)
                 {
                     return;
                 }

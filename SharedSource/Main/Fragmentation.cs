@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 using System.Runtime.Serialization;
 using WaveEngine.Common.Attributes;
 using WaveEngine.Common.Graphics;
@@ -97,25 +99,12 @@ namespace TFG
             }
             //Obtener todos los objetos con un tag definido
             var tags = EntityManager.FindAllByTag("worm");
+            var enemyTags = EntityManager.FindAllByTag("Enemy");
 
             //Para cada objeto con dicho tag, comprobar si ha colisionado el proyectil con dicho objeto
-            foreach (Entity tagi in tags)
-            {
-                planeBounding = tagi.FindComponent<BoxCollider3D>().BoundingBox;
-                if (planeBounding.Intersects(ref collider))
-                {
-                    positionCol = ballEntity.FindComponent<Transform3D>().Position;
-
-                    if (ballFrags == false)
-                    {
-                        collisioned = true;
-                    }
-                    else
-                    {
-                        collisionedFrag = true;
-                    }
-                }
-            }
+            checkCollision(tags, collider);
+            checkCollision(enemyTags, collider);
+            
 
             /*Si la colisión la hace los proyectiles fragmentados recuperamos cada fragmento y lo eliminamos*/
             if (collisionedFrag == true)
@@ -181,6 +170,29 @@ namespace TFG
 
             }
         }
+        void checkCollision(IEnumerable<Object> tags, BoundingSphere collider)
+        {
+            //Para cada objeto con dicho tag, comprobar si ha colisionado el proyectil con dicho objeto
+            foreach (Entity tagi in tags)
+            {
+                var playerBounding = tagi.FindComponent<BoxCollider3D>().BoundingBox;
+                if (playerBounding.Intersects(ref collider))
+                {
+                    positionCol = ballEntity.FindComponent<Transform3D>().Position;
+
+                    if (ballFrags == false)
+                    {
+                        collisioned = true;
+                    }
+                    else
+                    {
+                        collisionedFrag = true;
+                    }
+                }
+            }
+        }
+            
+
 
     }
 }

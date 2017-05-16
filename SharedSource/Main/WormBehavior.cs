@@ -31,10 +31,11 @@ namespace TFG
         private RigidBody3D rigidBodyTransform;
 
         private Vector3 rotation;
+        public bool used;
         protected override void Initialize()
         {
             base.Initialize();
-
+            used = false;
             this.CurrentSpeed = this.Speed;
 
             //Cargamos la entidad que se movera
