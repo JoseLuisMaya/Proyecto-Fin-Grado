@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 16/05/2017 22:33:36
+// File generated on 17/05/2017 15:42:36
 namespace TFG
 {
     using System;
@@ -48,6 +48,12 @@ namespace TFG
                 /// <summary> Path to Content/Assets/Textures/Eyes.jpg </summary>
                 public const string Eyes_jpg = "Content/Assets/Textures/Eyes.jpg";
                 
+                /// <summary> Path to Content/Assets/Textures/grass.jpg </summary>
+                public const string grass_jpg = "Content/Assets/Textures/grass.jpg";
+                
+                /// <summary> Path to Content/Assets/Textures/ground.jpg </summary>
+                public const string ground_jpg = "Content/Assets/Textures/ground.jpg";
+                
                 /// <summary> Path to Content/Assets/Textures/pl2289146-families_baroque_hdf_waterproof_7mm_laminate_flooring_with_wooden_material.jpg </summary>
                 public const string pl2289146_families_baroque_hdf_waterproof_7mm_laminate_flooring_with_wooden_material_jpg = "Content/Assets/Textures/pl2289146-families_baroque_hdf_waterproof_7mm_laminate_fl" +
                     "ooring_with_wooden_material.jpg";
@@ -77,6 +83,9 @@ namespace TFG
                 /// <summary> Path to Content/Assets/Materials/Body.wmat </summary>
                 public const string Body = "Content/Assets/Materials/Body.wmat";
                 
+                /// <summary> Path to Content/Assets/Materials/Box.wmat </summary>
+                public const string Box = "Content/Assets/Materials/Box.wmat";
+                
                 /// <summary> Path to Content/Assets/Materials/EnemyBody.wmat </summary>
                 public const string EnemyBody = "Content/Assets/Materials/EnemyBody.wmat";
                 
@@ -86,8 +95,8 @@ namespace TFG
                 /// <summary> Path to Content/Assets/Materials/EyeEnemy.wmat </summary>
                 public const string EyeEnemy = "Content/Assets/Materials/EyeEnemy.wmat";
                 
-                /// <summary> Path to Content/Assets/Materials/MyMaterial.wmat </summary>
-                public const string MyMaterial = "Content/Assets/Materials/MyMaterial.wmat";
+                /// <summary> Path to Content/Assets/Materials/Ground.wmat </summary>
+                public const string Ground = "Content/Assets/Materials/Ground.wmat";
                 
                 /// <summary> Path to Content/Assets/Materials/TombstoneMaterial.wmat </summary>
                 public const string TombstoneMaterial = "Content/Assets/Materials/TombstoneMaterial.wmat";

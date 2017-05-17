@@ -20,6 +20,12 @@
         <member name="F:TFG.WaveContent.Assets.Models.Worm_3ds">
             <summary> Path to Content/Assets/Models/Worm.3ds </summary>
         </member>
+        <member name="F:TFG.WaveContent.Assets.Models.worm_Enemy_3DS">
+            <summary> Path to Content/Assets/Models/worm_Enemy.3DS </summary>
+        </member>
+        <member name="F:TFG.WaveContent.Assets.Textures.akis_jpg">
+            <summary> Path to Content/Assets/Textures/akis.jpg </summary>
+        </member>
         <member name="F:TFG.WaveContent.Assets.Textures.button_png">
             <summary> Path to Content/Assets/Textures/button.png </summary>
         </member>
@@ -53,14 +59,23 @@
         <member name="F:TFG.WaveContent.Assets.Materials.Body">
             <summary> Path to Content/Assets/Materials/Body.wmat </summary>
         </member>
+        <member name="F:TFG.WaveContent.Assets.Materials.EnemyBody">
+            <summary> Path to Content/Assets/Materials/EnemyBody.wmat </summary>
+        </member>
         <member name="F:TFG.WaveContent.Assets.Materials.EYE">
             <summary> Path to Content/Assets/Materials/EYE.wmat </summary>
+        </member>
+        <member name="F:TFG.WaveContent.Assets.Materials.EyeEnemy">
+            <summary> Path to Content/Assets/Materials/EyeEnemy.wmat </summary>
         </member>
         <member name="F:TFG.WaveContent.Assets.Materials.MyMaterial">
             <summary> Path to Content/Assets/Materials/MyMaterial.wmat </summary>
         </member>
         <member name="F:TFG.WaveContent.Assets.Materials.TombstoneMaterial">
             <summary> Path to Content/Assets/Materials/TombstoneMaterial.wmat </summary>
+        </member>
+        <member name="F:TFG.WaveContent.Assets.Prefast.Enemy">
+            <summary> Path to Content/Assets/Prefast/Enemy.wpref </summary>
         </member>
         <member name="F:TFG.WaveContent.Assets.Prefast.Tombstone">
             <summary> Path to Content/Assets/Prefast/Tombstone.wpref </summary>
