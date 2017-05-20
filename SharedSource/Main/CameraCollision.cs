@@ -7,6 +7,7 @@ using WaveEngine.Framework;
 using WaveEngine.Framework.Graphics;
 using WaveEngine.Framework.Managers;
 using WaveEngine.Framework.Physics3D;
+using WaveEngine.Framework.Services;
 
 namespace TFG
 {
@@ -24,6 +25,7 @@ namespace TFG
         private Transform3D targetTransform;
         private String name;
         private String nameEnemy;
+        private Entity sphere;
         [DataMember]
         [RenderPropertyAsEntity(new string[] { "WaveEngine.Framework.Graphics.Transform3D" })]
 
@@ -36,7 +38,14 @@ namespace TFG
 
         public string EntityPathPointCamera { get; set; }
 
+        [DataMember]
+        [RenderPropertyAsEntity(new string[] { "WaveEngine.Framework.Graphics.Transform3D" })]
+
+        public string EntityPathCameraHolder { get; set; }
+
         private Transform3D pointCamera;
+
+        private Transform3D cameraHolderTransform;
 
         private PhysicsManager physicsManager;
 
@@ -59,17 +68,25 @@ namespace TFG
             {
                 return;
             }
+            if (string.IsNullOrEmpty(this.EntityPathCameraHolder))
+            {
+                return;
+            }
             var entity = this.EntityManager.Find(this.EntityPath);
             this.targetTransform = entity.FindComponent<Transform3D>();
             entity = this.EntityManager.Find(this.EntityPathCamera);
             this.camera = entity.FindComponent<Transform3D>();
             entity = this.EntityManager.Find(this.EntityPathPointCamera);
             this.pointCamera = entity.FindComponent<Transform3D>();
+            entity = this.EntityManager.Find(this.EntityPathCameraHolder);
+            cameraHolderTransform = entity.FindComponent<Transform3D>();
             name = null;
+            sphere = null;
         }
 
         protected override void Update(TimeSpan gameTime)
         {
+            sphere = EntityManager.Find("ball1");
             var entity = this.EntityManager.Find(this.EntityPath);
             if (entity == null)
             {
@@ -116,6 +133,9 @@ namespace TFG
                     nameEnemy = e.Name;
                 }
             }
+            if (WaveServices.Input.KeyboardState.Q != WaveEngine.Common.Input.ButtonState.Pressed){
+                if (sphere == null)
+                {
             //Comprobamos si el rayo ha colisionado con algún objeto
             if (result.HitBody != null)
             {
@@ -125,6 +145,8 @@ namespace TFG
                 {
 
                   this.camera.Position = this.pointCamera.Position;
+                            this.camera.LookAt(targetTransform.Position);
+
                   
                 }
                 
@@ -135,8 +157,24 @@ namespace TFG
                 {
                     Vector3 hitPosition = result.HitData.Location;
                     camera.Position = hitPosition;
+                            this.camera.LookAt(targetTransform.Position);
+
                  }
             }
+
+          }
+                else
+                {
+                    
+                    var lerp = Math.Min(1, 10 * (float)gameTime.TotalSeconds);
+                    this.cameraHolderTransform.Position = Vector3.Lerp(this.cameraHolderTransform.Position, sphere.FindComponent<Transform3D>().Position + Vector3.Up * -1f, lerp);
+                    this.cameraHolderTransform.Rotation = Vector3.Lerp(this.cameraHolderTransform.Rotation, sphere.FindComponent<Transform3D>().Rotation, lerp);
+                    this.cameraHolderTransform.Owner.FindChild("Camera").FindComponent<Transform3D>().LookAt(sphere.FindComponent<Transform3D>().Position);
+
+                }
+
+            }
+            
 
           }
 

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <doc>
     <assembly>
-        <name>TFG_0</name>
+        <name>TFG_3</name>
     </assembly>
     <members>
         <member name="M:TFG.App.OnActivated">

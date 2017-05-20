@@ -185,6 +185,6 @@ C:\Users\jlmaya\Desktop\Prueba\Launchers\Windows\bin\AnyCPU\Debug\WaveEngine.Com
 C:\Users\jlmaya\Desktop\Prueba\Launchers\Windows\bin\AnyCPU\Debug\WaveEngine.Materials.xml
 C:\Users\jlmaya\Desktop\Prueba\Launchers\Windows\bin\AnyCPU\Debug\WaveEngine.ImageEffects.xml
 C:\Users\jlmaya\Desktop\Prueba\Launchers\Windows\bin\AnyCPU\Debug\WaveEngine.Physics.xml
-C:\Users\jlmaya\Desktop\Prueba\Launchers\Windows\obj\Debug\TFG.csprojResolveAssemblyReference.cache
 C:\Users\jlmaya\Desktop\Prueba\Launchers\Windows\obj\Debug\TFG.exe
 C:\Users\jlmaya\Desktop\Prueba\Launchers\Windows\obj\Debug\TFG.pdb
+C:\Users\jlmaya\Desktop\Prueba\Launchers\Windows\obj\Debug\TFG.csprojResolveAssemblyReference.cache

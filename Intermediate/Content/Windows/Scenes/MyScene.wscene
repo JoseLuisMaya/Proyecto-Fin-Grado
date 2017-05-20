@@ -267,6 +267,7 @@
               <d6p1:UpdateOrder>0.5</d6p1:UpdateOrder>
               <d7p1:EntityPath>Worm1</d7p1:EntityPath>
               <d7p1:EntityPathCamera>cameraHolder.Camera</d7p1:EntityPathCamera>
+              <d7p1:EntityPathCameraHolder>cameraHolder</d7p1:EntityPathCameraHolder>
               <d7p1:EntityPathPointCamera>cameraHolder.pointCamera</d7p1:EntityPathPointCamera>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="WaveEngine.Framework.Physics3D" i:type="d7p1:BoxCollider3D">
@@ -376,6 +377,7 @@
         <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/TFG" i:type="d5p1:ShootingBehavior">
           <d4p1:IsActive>true</d4p1:IsActive>
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+          <d5p1:EntityCamera>cameraHolder</d5p1:EntityCamera>
           <d5p1:EntityPath>Worm1</d5p1:EntityPath>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/TFG" i:type="d5p1:Life">
@@ -442,11 +444,11 @@
           </d5p1:LocalScale>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
-          <d5p1:DefaultMaterialPath>Content/Assets/Materials/Body.wmat</d5p1:DefaultMaterialPath>
+          <d5p1:DefaultMaterialPath i:nil="true" />
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
           <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
-          <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
-          <d5p1:useDummyMaterial>false</d5p1:useDummyMaterial>
+          <d5p1:useDefaultMaterial>true</d5p1:useDefaultMaterial>
+          <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:Model">
           <ModelPath i:nil="true" xmlns="WaveEngine.Framework.Graphics" />
@@ -904,6 +906,7 @@
         <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/TFG" i:type="d5p1:ShootingBehavior">
           <d4p1:IsActive>true</d4p1:IsActive>
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+          <d5p1:EntityCamera>cameraHolder</d5p1:EntityCamera>
           <d5p1:EntityPath>Worm2</d5p1:EntityPath>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/TFG" i:type="d5p1:Life">
@@ -973,7 +976,7 @@
           <d5p1:EnableContinuousContact>false</d5p1:EnableContinuousContact>
           <d5p1:IsKinematic>false</d5p1:IsKinematic>
           <d5p1:KineticFriction>0.1</d5p1:KineticFriction>
-          <d5p1:Mass>1</d5p1:Mass>
+          <d5p1:Mass>0.2</d5p1:Mass>
           <d5p1:Restitution>0</d5p1:Restitution>
           <d5p1:StaticFriction>0.1</d5p1:StaticFriction>
         </d4p1:Component>
@@ -985,7 +988,7 @@
           <d4p1:IsActive>true</d4p1:IsActive>
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
           <d5p1:EntityPath>Enemy1</d5p1:EntityPath>
-          <d5p1:Speed>9</d5p1:Speed>
+          <d5p1:Speed>9.5</d5p1:Speed>
         </d4p1:Component>
       </d2p1:AdditionalComponents>
       <d2p1:PrefabElem>Enemy</d2p1:PrefabElem>
@@ -996,9 +999,17 @@
         <d4p1:KeyValueOfstringanyType>
           <d4p1:Key>WaveEngine.Framework.Graphics.Transform3D#LocalPosition</d4p1:Key>
           <d4p1:Value xmlns:d6p1="WaveEngine.Common.Math" i:type="d6p1:Vector3">
-            <d6p1:X>0</d6p1:X>
-            <d6p1:Y>0.228605092</d6p1:Y>
-            <d6p1:Z>-0.1758129</d6p1:Z>
+            <d6p1:X>2.44761539</d6p1:X>
+            <d6p1:Y>0.271249384</d6p1:Y>
+            <d6p1:Z>-1.50664461</d6p1:Z>
+          </d4p1:Value>
+        </d4p1:KeyValueOfstringanyType>
+        <d4p1:KeyValueOfstringanyType>
+          <d4p1:Key>WaveEngine.Framework.Graphics.Transform3D#LocalScale</d4p1:Key>
+          <d4p1:Value xmlns:d6p1="WaveEngine.Common.Math" i:type="d6p1:Vector3">
+            <d6p1:X>0.0475049429</d6p1:X>
+            <d6p1:Y>0.0450842343</d6p1:Y>
+            <d6p1:Z>0.0209511053</d6p1:Z>
           </d4p1:Value>
         </d4p1:KeyValueOfstringanyType>
       </d2p1:modifiedProperties>
@@ -1032,7 +1043,7 @@
           <d5p1:EnableContinuousContact>false</d5p1:EnableContinuousContact>
           <d5p1:IsKinematic>false</d5p1:IsKinematic>
           <d5p1:KineticFriction>0.1</d5p1:KineticFriction>
-          <d5p1:Mass>1</d5p1:Mass>
+          <d5p1:Mass>0.2</d5p1:Mass>
           <d5p1:Restitution>0</d5p1:Restitution>
           <d5p1:StaticFriction>0.1</d5p1:StaticFriction>
         </d4p1:Component>
@@ -1044,7 +1055,7 @@
           <d4p1:IsActive>true</d4p1:IsActive>
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
           <d5p1:EntityPath>Enemy2</d5p1:EntityPath>
-          <d5p1:Speed>9</d5p1:Speed>
+          <d5p1:Speed>9.5</d5p1:Speed>
         </d4p1:Component>
       </d2p1:AdditionalComponents>
       <d2p1:PrefabElem>Enemy</d2p1:PrefabElem>
@@ -1055,9 +1066,17 @@
         <d4p1:KeyValueOfstringanyType>
           <d4p1:Key>WaveEngine.Framework.Graphics.Transform3D#LocalPosition</d4p1:Key>
           <d4p1:Value xmlns:d6p1="WaveEngine.Common.Math" i:type="d6p1:Vector3">
-            <d6p1:X>-5.491583</d6p1:X>
-            <d6p1:Y>0.228605092</d6p1:Y>
-            <d6p1:Z>-2.581739</d6p1:Z>
+            <d6p1:X>1.07085073</d6p1:X>
+            <d6p1:Y>0.271249384</d6p1:Y>
+            <d6p1:Z>-3.092981</d6p1:Z>
+          </d4p1:Value>
+        </d4p1:KeyValueOfstringanyType>
+        <d4p1:KeyValueOfstringanyType>
+          <d4p1:Key>WaveEngine.Framework.Graphics.Transform3D#LocalScale</d4p1:Key>
+          <d4p1:Value xmlns:d6p1="WaveEngine.Common.Math" i:type="d6p1:Vector3">
+            <d6p1:X>0.0475049429</d6p1:X>
+            <d6p1:Y>0.0450842343</d6p1:Y>
+            <d6p1:Z>0.0209511053</d6p1:Z>
           </d4p1:Value>
         </d4p1:KeyValueOfstringanyType>
       </d2p1:modifiedProperties>

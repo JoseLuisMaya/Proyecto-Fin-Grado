@@ -71,6 +71,7 @@ namespace TFG
             maxForce = 50;
             direcMax = player.FindComponent<Transform3D>().WorldTransform.Up * 7;
             direcMin = player.FindComponent<Transform3D>().WorldTransform.Backward * 7;
+            direcMax = direcMax + direcMin;
             directionShoot = direcMin;
             up = 0;
 
@@ -78,6 +79,7 @@ namespace TFG
         }
         protected override void Update(TimeSpan gameTime)
         {
+            owner = this.EntityManager.Find(this.EntityPath);
             //Actualizar la dirección de disparo y la dirección de la puntería en cada frame
             direcMin = owner.FindComponent<Transform3D>().WorldTransform.Backward * 7;
             up = directionShoot.Y;
@@ -113,18 +115,16 @@ namespace TFG
             {
                 return;
             }
-           
             
-            if (lastDistance > 5)
+            
+            if (lastDistance > 15)
             {
-
-                //Rotar el enemigo para mirar al personaje  y andar hacia su posición
+                //Rotar la posición para mirar al personaje y disparar
                 transform.LookAt(player.FindComponent<Transform3D>().Position*-1);
                 rigidBodyTransform.Rotation = transform.Rotation;
-                this.Transform.LocalOrientation *= Quaternion.CreateFromYawPitchRoll(rigidBodyTransform.Rotation.X, rigidBodyTransform.Rotation.Y, rigidBodyTransform.Rotation.Z);
+                transform.LocalOrientation *= Quaternion.CreateFromYawPitchRoll(rigidBodyTransform.Rotation.X, rigidBodyTransform.Rotation.Y, rigidBodyTransform.Rotation.Z);
                 this.Transform.Rotation = rigidBodyTransform.Rotation;
                 
-                rigidBodyTransform.ApplyLinearImpulse(this.Transform.WorldTransform.Backward * (this.CurrentSpeed * (float)gameTime.TotalSeconds));
             }
             else
             {
@@ -133,8 +133,9 @@ namespace TFG
                     //Rotar la posición para mirar al personaje y disparar
                     transform.LookAt(player.FindComponent<Transform3D>().Position * -1);
                     rigidBodyTransform.Rotation = transform.Rotation;
-                    this.Transform.LocalOrientation *= Quaternion.CreateFromYawPitchRoll(rigidBodyTransform.Rotation.X, rigidBodyTransform.Rotation.Y, rigidBodyTransform.Rotation.Z);
+                    transform.LocalOrientation *= Quaternion.CreateFromYawPitchRoll(rigidBodyTransform.Rotation.X, rigidBodyTransform.Rotation.Y, rigidBodyTransform.Rotation.Z);
                     this.Transform.Rotation = rigidBodyTransform.Rotation;
+
                     Shoot();
                 }
                 
@@ -184,7 +185,7 @@ namespace TFG
             if (sphere == null)
             {
                 sphere = new Entity("ball1")
-                .AddComponent(new Transform3D() { Position = this.owner.FindComponent<Transform3D>().Position + Vector3.Up * 2 })
+                .AddComponent(new Transform3D() { Scale = new Vector3(0.5f), Position = this.owner.FindComponent<Transform3D>().Position + Vector3.Up * 2 })
                 .AddComponent(new MaterialsMap(new StandardMaterial(Color.Gray, DefaultLayers.Opaque)))
                 .AddComponent(Model.CreateSphere())
                 .AddComponent(new SphereCollider3D())

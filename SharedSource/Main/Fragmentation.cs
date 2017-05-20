@@ -127,7 +127,7 @@ namespace TFG
                 for (int i = 1; i < 5; i++)
                 {
                     Entity sphere = new Entity("ballFrag" + i)
-                            .AddComponent(new Transform3D() { Scale = new Vector3(1), Position = positionCol })
+                            .AddComponent(new Transform3D() { Scale = new Vector3(0.2f), Position = positionCol })
                             .AddComponent(new MaterialsMap(new StandardMaterial(Color.Gray, DefaultLayers.Opaque)))
                             .AddComponent(Model.CreateSphere())
                             .AddComponent(new SphereCollider3D())

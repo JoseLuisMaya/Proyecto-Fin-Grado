@@ -33,12 +33,18 @@ namespace TFG
         private float up;
         Entity sphere;
         private Transform3D targetTransform;
+        private Transform3D cameraTransform;
         
 
         [DataMember]
         [RenderPropertyAsEntity(new string[] { "WaveEngine.Framework.Graphics.Transform3D" })]
 
         public string EntityPath { get; set; }
+
+        [DataMember]
+        [RenderPropertyAsEntity(new string[] { "WaveEngine.Framework.Graphics.Transform3D" })]
+
+        public string EntityCamera { get; set; }
 
 
 
@@ -56,6 +62,8 @@ namespace TFG
 
             var entity = this.EntityManager.Find(this.EntityPath);
             this.targetTransform = entity.FindComponent<Transform3D>();
+            entity = this.EntityManager.Find(this.EntityCamera);
+            cameraTransform = entity.FindComponent<Transform3D>();
             force = 0;
             maxForce = 50;
             increment = true;
@@ -69,9 +77,11 @@ namespace TFG
             showAimMin = targetTransform.WorldTransform.Left * 7;
             showAim = showAimMin;
             up = 0;
+           
         }
         protected override void Update(TimeSpan gameTime)
         {
+            
             //Actualizar la dirección de disparo y la dirección de la puntería en cada frame
             direcMin = targetTransform.WorldTransform.Backward * 7;
             showAimMin = targetTransform.WorldTransform.Left * 7;
@@ -101,6 +111,12 @@ namespace TFG
                     
                 }
 
+
+                var lerp = Math.Min(1, 10 * (float)gameTime.TotalSeconds);
+                this.cameraTransform.Position = Vector3.Lerp(this.cameraTransform.Position, this.targetTransform.Position+Vector3.Up*-1f, lerp);
+                this.cameraTransform.Rotation = Vector3.Lerp(this.cameraTransform.Rotation, this.targetTransform.Rotation, lerp);
+                this.cameraTransform.Owner.FindChild("Camera").FindComponent<Transform3D>().LookAt(targetTransform.Position);
+               
                 //Incremento y decremento de la fuerza oscilando entre un mínimo y un máximo
                 if (force <= maxForce && increment==true)
                 {
@@ -154,6 +170,7 @@ namespace TFG
             if ((WaveServices.Input.KeyboardState.Q == WaveEngine.Common.Input.ButtonState.Release) && pressed == true && sphere == null)
             {
                 Shoot();
+             
             }      
           
         }
@@ -167,7 +184,7 @@ namespace TFG
             if (sphere == null)
             {
                 sphere = new Entity("ball1")
-                .AddComponent(new Transform3D() { Position = this.targetTransform.Position+Vector3.Up*2 })
+                .AddComponent(new Transform3D() { Scale = new Vector3(0.5f), Position = this.targetTransform.Position+Vector3.Up*2 })
                 .AddComponent(new MaterialsMap(new StandardMaterial(Color.Gray, DefaultLayers.Opaque)))
                 .AddComponent(Model.CreateSphere())
                 .AddComponent(new SphereCollider3D())
