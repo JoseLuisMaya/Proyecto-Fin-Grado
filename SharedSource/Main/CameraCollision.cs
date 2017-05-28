@@ -167,7 +167,8 @@ namespace TFG
                 {
                     
                     var lerp = Math.Min(1, 10 * (float)gameTime.TotalSeconds);
-                    this.cameraHolderTransform.Position = Vector3.Lerp(this.cameraHolderTransform.Position, sphere.FindComponent<Transform3D>().Position + Vector3.Up * -1f, lerp);
+                    sphere.FindComponent<Transform3D>().LookAt(targetTransform.Position);
+                    this.cameraHolderTransform.Position = Vector3.Lerp(this.cameraHolderTransform.Position, sphere.FindComponent<Transform3D>().Position + Vector3.Up, lerp);
                     this.cameraHolderTransform.Rotation = Vector3.Lerp(this.cameraHolderTransform.Rotation, sphere.FindComponent<Transform3D>().Rotation, lerp);
                     this.cameraHolderTransform.Owner.FindChild("Camera").FindComponent<Transform3D>().LookAt(sphere.FindComponent<Transform3D>().Position);
 
