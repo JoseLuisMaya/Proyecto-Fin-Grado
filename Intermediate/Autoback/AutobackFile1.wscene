@@ -344,9 +344,9 @@
             <d6p1:Z>-0.008687342</d6p1:Z>
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>9.755157</d6p1:X>
+            <d6p1:X>11.933</d6p1:X>
             <d6p1:Y>0.44295</d6p1:Y>
-            <d6p1:Z>4.3769</d6p1:Z>
+            <d6p1:Z>11.4347162</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:X>0.201762065</d6p1:X>
@@ -447,7 +447,7 @@
           <d5p1:DefaultMaterialPath i:nil="true" />
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
           <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
-          <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
+          <d5p1:useDefaultMaterial>true</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:Model">
@@ -505,12 +505,12 @@
               <d7p1:LocalPosition xmlns:d8p1="WaveEngine.Common.Math">
                 <d8p1:X>34.81942</d8p1:X>
                 <d8p1:Y>18.4522667</d8p1:Y>
-                <d8p1:Z>8.621413</d8p1:Z>
+                <d8p1:Z>4.97353268</d8p1:Z>
               </d7p1:LocalPosition>
               <d7p1:LocalScale xmlns:d8p1="WaveEngine.Common.Math">
-                <d8p1:X>11.6458158</d8p1:X>
+                <d8p1:X>11.45</d8p1:X>
                 <d8p1:Y>35.37401</d8p1:Y>
-                <d8p1:Z>45.8746071</d8p1:Z>
+                <d8p1:Z>50.57</d8p1:Z>
               </d7p1:LocalScale>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:MaterialsMap">
@@ -525,7 +525,7 @@
               <d7p1:ModelType>Cube</d7p1:ModelType>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:ModelRenderer">
-              <d6p1:IsVisible>true</d6p1:IsVisible>
+              <d6p1:IsVisible>false</d6p1:IsVisible>
               <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="WaveEngine.Framework.Physics3D" i:type="d7p1:BoxCollider3D">
@@ -560,7 +560,7 @@
           <d2p1:SerializeChildrens />
           <d2p1:isStatic>false</d2p1:isStatic>
           <d2p1:isVisible>true</d2p1:isVisible>
-          <d2p1:name>limit04</d2p1:name>
+          <d2p1:name>limit4</d2p1:name>
           <d2p1:tag i:nil="true" />
           <d2p1:SerializeComponents xmlns:d6p1="WaveEngine.Framework">
             <d6p1:Component xmlns:d7p1="WaveEngine.Framework.Graphics" i:type="d7p1:Transform3D">
@@ -568,17 +568,17 @@
                 <d8p1:W>0.7071068</d8p1:W>
                 <d8p1:X>0</d8p1:X>
                 <d8p1:Y>0.7071067</d8p1:Y>
-                <d8p1:Z>-0</d8p1:Z>
+                <d8p1:Z>0</d8p1:Z>
               </d7p1:LocalOrientation>
               <d7p1:LocalPosition xmlns:d8p1="WaveEngine.Common.Math">
-                <d8p1:X>10.9293547</d8p1:X>
+                <d8p1:X>5.396469</d8p1:X>
                 <d8p1:Y>18.4522667</d8p1:Y>
                 <d8p1:Z>-26.6500759</d8p1:Z>
               </d7p1:LocalPosition>
               <d7p1:LocalScale xmlns:d8p1="WaveEngine.Common.Math">
                 <d8p1:X>11.6458158</d8p1:X>
                 <d8p1:Y>35.37401</d8p1:Y>
-                <d8p1:Z>53.5463867</d8p1:Z>
+                <d8p1:Z>62.82879</d8p1:Z>
               </d7p1:LocalScale>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:MaterialsMap">
@@ -593,7 +593,7 @@
               <d7p1:ModelType>Cube</d7p1:ModelType>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:ModelRenderer">
-              <d6p1:IsVisible>true</d6p1:IsVisible>
+              <d6p1:IsVisible>false</d6p1:IsVisible>
               <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="WaveEngine.Framework.Physics3D" i:type="d7p1:BoxCollider3D">
@@ -661,7 +661,7 @@
               <d7p1:ModelType>Cube</d7p1:ModelType>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:ModelRenderer">
-              <d6p1:IsVisible>true</d6p1:IsVisible>
+              <d6p1:IsVisible>false</d6p1:IsVisible>
               <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="WaveEngine.Framework.Physics3D" i:type="d7p1:BoxCollider3D">
@@ -729,7 +729,7 @@
               <d7p1:ModelType>Cube</d7p1:ModelType>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:ModelRenderer">
-              <d6p1:IsVisible>true</d6p1:IsVisible>
+              <d6p1:IsVisible>false</d6p1:IsVisible>
               <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="WaveEngine.Framework.Physics3D" i:type="d7p1:BoxCollider3D">
@@ -875,7 +875,7 @@
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:X>-9.088366</d6p1:X>
             <d6p1:Y>0.44295</d6p1:Y>
-            <d6p1:Z>5.06757975</d6p1:Z>
+            <d6p1:Z>9.198571</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:X>0.201762065</d6p1:X>

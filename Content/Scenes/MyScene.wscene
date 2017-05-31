@@ -344,9 +344,9 @@
             <d6p1:Z>-0.008687342</d6p1:Z>
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>9.755157</d6p1:X>
+            <d6p1:X>11.933</d6p1:X>
             <d6p1:Y>0.44295</d6p1:Y>
-            <d6p1:Z>4.3769</d6p1:Z>
+            <d6p1:Z>11.4347162</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:X>0.201762065</d6p1:X>
@@ -447,7 +447,7 @@
           <d5p1:DefaultMaterialPath i:nil="true" />
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
           <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
-          <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
+          <d5p1:useDefaultMaterial>true</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:Model">
@@ -568,7 +568,7 @@
                 <d8p1:W>0.7071068</d8p1:W>
                 <d8p1:X>0</d8p1:X>
                 <d8p1:Y>0.7071067</d8p1:Y>
-                <d8p1:Z>-0</d8p1:Z>
+                <d8p1:Z>0</d8p1:Z>
               </d7p1:LocalOrientation>
               <d7p1:LocalPosition xmlns:d8p1="WaveEngine.Common.Math">
                 <d8p1:X>5.396469</d8p1:X>
@@ -875,7 +875,7 @@
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:X>-9.088366</d6p1:X>
             <d6p1:Y>0.44295</d6p1:Y>
-            <d6p1:Z>5.06757975</d6p1:Z>
+            <d6p1:Z>9.198571</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:X>0.201762065</d6p1:X>
